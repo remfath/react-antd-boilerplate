@@ -1,0 +1,48 @@
+@import "mixins";
+$minHeight: calc(100vh - 45px);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.app-main {
+    display: flex;
+    height: $minHeight;
+}
+
+.app-main-nav {
+    width: 240px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-grow: 0;
+    background: #404040;
+}
+
+.header-logo {
+    color: darkorange;
+}
+
+.app-main-content {
+    overflow: auto;
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.home-page {
+    @include flex-center;
+    width: 100%;
+    height: $minHeight;
+}
+
+.content-header {
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content-title {
+    margin-left: 5px;
+}

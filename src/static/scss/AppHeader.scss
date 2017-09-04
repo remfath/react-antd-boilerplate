@@ -1,0 +1,36 @@
+.app-header {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9e9e9;
+    box-shadow: 0 0 12px 0 #e9e9e9;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.header-logo {
+    width: 75px;
+}
+
+.header-tips {
+    color: #ffa500;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: #666;
+}
+
+.header-user-delimiter {
+    margin: 0 8px;
+}
+
+.logout-btn {
+    cursor: pointer;
+}
+
