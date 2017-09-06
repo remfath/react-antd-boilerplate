@@ -1,0 +1,265 @@
+@import "mixins";
+
+.battle-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
+.battle-nav {
+  font-size: 120%;
+  margin: 15px;
+}
+
+.battle-nav .active {
+  font-weight: bold;
+}
+
+.battle-nav li {
+  margin-right: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1500px;
+}
+
+.lang {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.lang li {
+  margin: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 110%;
+}
+
+.lang li:hover {
+  color: #d0021b;
+}
+
+.lang-active {
+  color: #d0021b;
+}
+
+.loading {
+  width: 100%;
+  height: 200px;
+  @include flex-row-center;
+  color: darkblue;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.error {
+  width: 100%;
+  height: 200px;
+  @include flex-row-center;
+  color: red;
+  font-weight: bold;
+}
+
+.repos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px 50px;
+}
+
+.repos:after {
+  content: "";
+  flex: auto;
+}
+
+.repos li {
+  margin: 30px 20px;
+  text-align: center;
+  @include flex-col-center;
+  width: 200px;
+  overflow: hidden;
+}
+
+.repo-rank {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.repo-avatar {
+  width: 160px;
+  border-radius: 50%;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.repo-name {
+  text-decoration: none;
+  color: #000;
+  overflow: hidden;
+  @include flex-row-center;
+  font-weight: bold;
+}
+
+.repo-author {
+  margin: 7px 0;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home h1 {
+  margin-top: 50px;
+}
+
+.home .battle-link {
+  width: 200px;
+  height: 50px;
+  background: #222;
+  color: #fff;
+  font-size: 22px;
+  @include flex-row-center;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.battle-link:hover {
+  background: #000;
+}
+
+.not-found {
+  width: 100%;
+  height: 200px;
+  @include flex-row-center;
+}
+
+.not-found h1 {
+  color: darkorange;
+}
+
+.battle-container {
+  @include flex-col-center;
+}
+
+.battle-users {
+  @include flex-row-center;
+}
+
+.player {
+  height: 300px;
+  width: 400px;
+  margin: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player-input {
+  width: 90%;
+  height: 35px;
+  line-height: 40px;
+  padding: 7px;
+  font-size: 17px;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.player-submit {
+  width: 150px;
+  height: 40px;
+  background: #222;
+  color: #fff;
+  @include flex-row-center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.player-submit:hover {
+  background: #000;
+}
+
+.player-info {
+  height: 300px;
+  width: 400px;
+  margin: 20px 50px;
+  @include flex-col-center;
+}
+
+.player-avatar {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.player-name {
+  margin: 25px 0;
+}
+
+.player-reset {
+  color: red;
+  cursor: pointer;
+}
+
+.battle-btn {
+  width: 200px;
+  height: 40px;
+  background: #000;
+  color: #fff;
+  @include flex-row-center;
+  border-radius: 4px;
+}
+
+.user-result {
+  width: 400px;
+  @include flex-col-center;
+  margin: 25px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.battle-result-container {
+  @include flex-col-center;
+}
+
+.result-show {
+  @include flex-row-center;
+}
+
+.battle-again {
+  width: 200px;
+  height: 40px;
+  @include flex-row-center;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.user-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.user-detail p {
+  margin: 2px 0;
+}

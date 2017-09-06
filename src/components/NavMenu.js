@@ -23,14 +23,22 @@ class NavMenu extends Component {
                     <NavLink exact to="/"> <Icon type="mail"/>Home</NavLink>
                 </Menu.Item>
 
-                <SubMenu key="sub-general" title={<span><Icon type="setting"/><span>General</span></span>}>
-                    <Menu.Item key="general-button">
-                        <NavLink to="/general/button">Button</NavLink>
+                <SubMenu key="sub-antd" title={<span><Icon type="setting"/><span>Antd</span></span>}>
+                    <Menu.Item key="antd-button">
+                        <NavLink to="/antd/button">Button</NavLink>
                     </Menu.Item>
-                    <Menu.Item key="general-icon">
-                        <NavLink to="/general/icon">Icon</NavLink>
+                    <Menu.Item key="antd-icon">
+                        <NavLink to="/antd/icon">Icon</NavLink>
                     </Menu.Item>
                 </SubMenu>
+
+                <SubMenu key="sub-github" title={<span><Icon type="setting"/><span>Github</span></span>}>
+                    <Menu.Item key="github-battle">
+                        <NavLink to="/github/battle">Battle</NavLink>
+                    </Menu.Item>
+                </SubMenu>
+
+
             </Menu>
         );
     }
