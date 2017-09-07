@@ -9,9 +9,9 @@ class AppHeader extends Component {
     render() {
         return (
             <div className="app-header">
-                <h2 className="header-logo">{ process.env.APP_NAME }</h2>
+                <h2 className="header-logo">{ process.env.REACT_APP_APP_NAME }</h2>
                 <div className="header-user">
-                    <p>{ process.env.USER_NAME }</p>
+                    <p>{ process.env.REACT_APP_USER_NAME }</p>
                     <p className="header-user-delimiter">|</p>
                     <p className="logout-btn"  onClick={ AppHeader.handleLogout }>Logout</p>
                 </div>
